@@ -1,0 +1,153 @@
+/*=========== RESET ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5,
+p,
+span,
+button,
+input,
+select {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 300px;
+  resize: none;
+  padding: 0.5rem 1rem;
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #333;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: bottom 0.4s;
+}
+.keyboard .keyboard-keys {
+  text-align: center;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.keyboard .keyboard-keys .keyboard-key {
+  height: 45px;
+  width: 6%;
+  max-width: 100px;
+  margin: 0.3rem 0.15rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.keyboard .keyboard-keys .keyboard-key:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.keyboard .keyboard-keys .keyboard-key-wide {
+  width: 12%;
+}
+.keyboard .keyboard-keys .keyboard-key-extra-wide {
+  width: 36%;
+  max-width: 500px;
+}
+.keyboard .keyboard-keys .keyboard-key-activatable::after {
+  content: "";
+  top: 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+  width: 0.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.keyboard .keyboard-keys .keyboard-key-active::after {
+  background-color: #fff;
+}
+.keyboard .keyboard-keys .keyboard-key-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.keyboard-hidden {
+  bottom: -100%;
+}/*# sourceMappingURL=keyboard.css.map */
