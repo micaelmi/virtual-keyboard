@@ -78,7 +78,7 @@ h2 {
 }
 
 textarea {
-  width: 300px;
+  width: 500px;
   resize: none;
   padding: 0.5rem 1rem;
 }
@@ -155,6 +155,9 @@ textarea {
 @media (max-width: 500px) {
   * {
     font-size: 70%;
+  }
+  textarea {
+    width: 300px;
   }
   .keyboard .keyboard-keys .keyboard-key {
     height: 35px;
